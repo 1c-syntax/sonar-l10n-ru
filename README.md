@@ -32,7 +32,7 @@ To submit a contribution, create a pull request for this repository. Please make
 ## Structure
 
 * This plugin [based on structure of French Lang Pack](https://github.com/SonarQubeCommunity/sonar-l10n-fr)
-* For contributing please use docker container to visual check of localization - use `rebuild-and-restart.sh` скрипт for this
+* For contributing please use docker container to visual check of localization - use `rebuild-and-restart.sh` script for this
 
 ## For Russian Spoken People
 
