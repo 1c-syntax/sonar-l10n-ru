@@ -12,7 +12,7 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 
 * You must get the source.
 * run `mvn clean package`
-* when copy the `target\*.jar` into extensions dir of the SonarQube
+* then copy the `target\*.jar` into extensions dir of the SonarQube
 
 ## Have questions or feedback?
 
