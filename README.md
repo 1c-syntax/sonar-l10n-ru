@@ -2,6 +2,10 @@
 
 This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web application in Russian.
 
+[![Gitter Chat https://gitter.im/silverbulleters/sonar-l10n-ru](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/silverbulleters/sonar-l10n-ru?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/sonar-l10-ru/localized.svg)](https://crowdin.com/project/sonar-l10-ru)
+
+
 ## Releases
 
 > TODO - out it in to update center
@@ -12,7 +16,7 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 
 ## Have questions or feedback?
 
-Have question or feedback? To provide feedback (request a feature, report a bug etc.) use the [Gitter Chat]). Please do not forget to specify the language pack (Russian!), plugin version and SonarQube version.
+Have question or feedback? To provide feedback (request a feature, report a bug etc.) use the [Gitter Chat](https://gitter.im/silverbulleters/sonar-l10n-ru)). Please do not forget to specify the language pack (Russian!), plugin version and SonarQube version.
 If you have a question on how to use plugin, direct it to [StackOverflow](http://stackoverflow.com/questions/tagged/sonarqube) tagged `sonarqube`.
 
 ## Contributing
