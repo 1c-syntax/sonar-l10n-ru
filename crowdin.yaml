@@ -1,0 +1,11 @@
+project_identifier: sonar-l10-ru
+api_key: <%= ENV["CROWDIN_API_KEY"] %>
+
+files:
+  -
+    source: '/src/main/resources/org/sonar/l10n/core.properties'
+    dest: '/core.properties'
+    translation: '/src/main/resources/org/sonar/l10n/core_%two_letters_code%.properties'
+    type: 'properties'
+  
+        
