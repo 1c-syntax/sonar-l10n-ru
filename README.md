@@ -5,14 +5,13 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 [![Gitter Chat https://gitter.im/silverbulleters/sonar-l10n-ru](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/silverbulleters/sonar-l10n-ru?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/sonar-l10-ru/localized.svg)](https://crowdin.com/project/sonar-l10-ru)
 
-
 ## Releases
 
-> TODO - publish it in to update center
+### Build it from source
 
-* You must get the source.
-* run `mvn clean package`
-* then copy the `target\*.jar` into extensions dir of the SonarQube
+* You must get the source with git client
+* run `mvn clean package` (Maven must be in your path)
+* then copy the `target\*.jar` into extensions dir of the SonarQube like it described in SonarQube docs
 
 ## Have questions or feedback?
 
@@ -23,7 +22,9 @@ If you have a question on how to use plugin, direct it to [StackOverflow](http:/
 
 #### Topic in SonarQube Google Group
 
-To request a new feature, please create a new issue in [GitHub Issues](https://github.com/silverbulleters/sonar-l10n-ru/issues). Even if you plan to implement it yourself and submit it back to the community, please start a new issue first to be sure that we can use it.
+To request a new feature, please create a new issue in [GitHub Issues](https://github.com/silverbulleters/sonar-l10n-ru/issues). 
+Even if you plan to implement it yourself and submit it back to the community, please start a new issue first to be sure that we can use it.
+If you plan to join the localization team, please join us on [CrowdIn Project](https://crowdin.com/project/sonar-l10-ru/ru#)
 
 #### Pull Request (PR)
 
@@ -37,3 +38,6 @@ To submit a contribution, create a pull request for this repository. Please make
 ## For Russian Spoken People
 
 Этот плагин используется для локализации продукта SonarQube при внедрении процесса контроля качества 1С решений. Плагин для контроля 1С систем является платным - за подробностями обращайтесь по адресу `b2b@silverbulleters.org`
+
+Если вы хотите принять участие в локализации - вы можете присоединиться к команде локализаторов в рамках проекта [CrowdIn](https://crowdin.com/project/sonar-l10-ru/ru#)
+
