@@ -7,5 +7,9 @@ files:
     dest: '/core.properties'
     translation: '/src/main/resources/org/sonar/l10n/core_%two_letters_code%.properties'
     type: 'properties'
-  
+  -
+    source: '/src/main/resources/org/sonar/l10n/motionchart.properties'
+    dest: '/core.properties'
+    translation: '/src/main/resources/org/sonar/l10n/motionchart_%two_letters_code%.properties'
+    type: 'properties'
         

@@ -63,9 +63,9 @@
 
         <!-- Versions of the plugin translated by this language pack -->
         <bundle.motionchart>1.7</bundle.motionchart>
-        <!-- add thi stub for plugins localization
-        <bundle.csharp>5.1</bundle.csharp>
-        <bundle.java>3.14</bundle.java>
+        <!-- add this stub for plugins localization -->
+        <bundle.csharp>5.3</bundle.csharp>
+        <bundle.java>4.1</bundle.java>
         -->
         
     </properties>
@@ -109,13 +109,13 @@
             <version>${bundle.csharp}</version>
             <scope>test</scope>
         </dependency>
+        -->
         <dependency>
            <groupId>org.sonarsource.java</groupId>
             <artifactId>java</artifactId>
             <version>${bundle.java}</version>
             <scope>test</scope>
         </dependency>
-        -->
     </dependencies>
 
     <developers>
