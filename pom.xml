@@ -184,7 +184,33 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>com.mycila.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <version>1.10.b1</version>
+                <configuration>
+                    <properties>
+                        <name>GNU LGPL v3</name>
+                        <owner>SilverBulleters, LLC</owner>
+                        <title>${project.name}</title>
+                        <years>${project.inceptionYear}</years>
+                        <mailto>mailto:contact AT silverbulleters DOT org</mailto>
+                    </properties>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/package-info.java</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
