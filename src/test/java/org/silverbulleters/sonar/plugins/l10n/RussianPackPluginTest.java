@@ -32,7 +32,7 @@ public class RussianPackPluginTest {
     }
 
     @Test
-    public void bundles_should_be_up_to_date() {
+    public void bundlesShouldBeUpToDate() {
         I18nMatchers.assertBundlesUpToDate();
     }
 
