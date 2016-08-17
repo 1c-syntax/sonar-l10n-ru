@@ -27,7 +27,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class RussianPackPluginTest {
 
   @Test
-  public void noExtensions() throws Exception {
+  public void noExtensions() {
     assertThat(new RussianPackPlugin().getExtensions()).isEmpty();
   }
 
