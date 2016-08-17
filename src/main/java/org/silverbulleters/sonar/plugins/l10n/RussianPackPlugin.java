@@ -27,8 +27,8 @@ import java.util.List;
 
 public final class RussianPackPlugin  extends SonarPlugin {
 
-    public List getExtensions() {
-        return Collections.emptyList();
+  public List getExtensions() {
+    return Collections.emptyList();
 
-    }
+  }
 }

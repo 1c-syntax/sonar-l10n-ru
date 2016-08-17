@@ -26,15 +26,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class RussianPackPluginTest {
 
-    @Test
-    public void noExtensions() throws Exception {
-        assertThat(new RussianPackPlugin().getExtensions()).isEmpty();
-    }
+  @Test
+  public void noExtensions() throws Exception {
+    assertThat(new RussianPackPlugin().getExtensions()).isEmpty();
+  }
 
-    @Test
-    public void bundlesShouldBeUpToDate() {
-        I18nMatchers.assertBundlesUpToDate();
-    }
+  @Test
+  public void bundlesShouldBeUpToDate() {
+    I18nMatchers.assertBundlesUpToDate();
+  }
 
 
 }
