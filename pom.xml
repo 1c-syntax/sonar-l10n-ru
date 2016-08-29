@@ -12,7 +12,7 @@
 
   <groupId>org.sonarqube.l10n.ru</groupId>
   <artifactId>sonar-l10n-ru-plugin</artifactId>
-  <version>1.0-RC1</version>
+  <version>1.0</version>
   <packaging>sonar-plugin</packaging>
 
   <name>Russian Pack for SonarQube</name>
