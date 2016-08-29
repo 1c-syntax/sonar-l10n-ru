@@ -20,6 +20,8 @@
 package org.silverbulleters.sonar.plugins.l10n;
 
 import org.junit.Test;
+import org.sonar.api.Plugin.Context;
+import org.sonar.api.utils.Version;
 import org.sonar.test.i18n.I18nMatchers;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -27,14 +29,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class RussianPackPluginTest {
 
   @Test
-  public void noExtensions() {
-    assertThat(new RussianPackPlugin().getExtensions()).isEmpty();
+  public void testDefine() {
+    RussianPackPlugin plugin = new RussianPackPlugin();
+    Context context = new Context(Version.create(0, 0));
+    plugin.define(context);
+    assertThat(context.getExtensions()).hasSize(0);
   }
 
   @Test
   public void bundlesShouldBeUpToDate() {
     I18nMatchers.assertBundlesUpToDate();
   }
-
 
 }

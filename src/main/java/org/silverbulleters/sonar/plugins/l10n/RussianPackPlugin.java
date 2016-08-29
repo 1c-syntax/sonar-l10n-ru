@@ -19,16 +19,13 @@
  */
 package org.silverbulleters.sonar.plugins.l10n;
 
-import org.sonar.api.SonarPlugin;
+import org.sonar.api.Plugin;
 
-import java.util.Collections;
-import java.util.List;
+public class RussianPackPlugin implements Plugin {
 
-
-public final class RussianPackPlugin  extends SonarPlugin {
-
-  public List getExtensions() {
-    return Collections.emptyList();
-
+  @Override
+  public void define(Context context) {
+    // No extension points for language plugin
   }
+
 }
