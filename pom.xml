@@ -38,6 +38,11 @@
     <url>https://github.com/silverbulleters/sonar-l10n-ru/issues</url>
   </issueManagement>
 
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>http://ci.silverbulleters.org/</url>
+  </ciManagement>
+
   <scm>
     <connection>scm:git:git://github.com/silverbulleters/sonar-l10n-ru.git</connection>
     <developerConnection>scm:git:git@github.com:silverbulleters/sonar-l10n-ru.git</developerConnection>
