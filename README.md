@@ -7,6 +7,16 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 
 ## Releases
 
+### Install via Update Center
+
+![default](https://cloud.githubusercontent.com/assets/1132840/18093575/fd4abb4a-6ed8-11e6-9662-16133aab406f.PNG)
+
+### Manual download from Releases page
+
+* Check the [Releases](https://github.com/silverbulleters/sonar-l10n-ru/releases) section
+* Download `sonar-l10n-ru-plugin-x.x.jar` file
+* Copy the `sonar-l10n-ru-plugin-x.x.jar` into extensions dir of the SonarQube like it described in SonarQube docs
+
 ### Build it from source
 
 * You must get the source with git client
@@ -41,3 +51,4 @@ To submit a contribution, create a pull request for this repository. Please make
 
 Если вы хотите принять участие в локализации - вы можете присоединиться к команде локализаторов в рамках проекта [CrowdIn](https://crowdin.com/project/sonar-l10-ru/ru#)
 
+![russian](https://cloud.githubusercontent.com/assets/1132840/18093540/e03b8304-6ed8-11e6-80c7-2a14b967dbc9.PNG)
