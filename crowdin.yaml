@@ -5,11 +5,11 @@ files:
   -
     source: '/src/main/resources/org/sonar/l10n/core.properties'
     dest: '/core.properties'
-    translation: '/src/main/resources/org/sonar/l10n/core_%two_letters_code%.properties'
+    translation: '<%= ENV["GIT_LOCAL_BRANCH"] %>/src/main/resources/org/sonar/l10n/core_%two_letters_code%.properties'
     type: 'properties'
 
   -
     source: '/src/main/resources/org/sonar/l10n/motionchart.properties'
     dest: '/motionchart.properties'
-    translation: '/src/main/resources/org/sonar/l10n/motionchart_%two_letters_code%.properties'
+    translation: '<%= ENV["GIT_LOCAL_BRANCH"] %>/src/main/resources/org/sonar/l10n/motionchart_%two_letters_code%.properties'
     type: 'properties'
