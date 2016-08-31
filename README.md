@@ -23,6 +23,11 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 * run `mvn clean package` (Maven must be in your path)
 * then copy the `target\*.jar` into extensions dir of the SonarQube like it described in SonarQube docs
 
+## Compatibility Matrix
+SonarQube     | 5.6.1 (LTS) | 6.0 |
+--------------|-------------|-----|
+sonar-l10n-ru | 1.0         | 1.1 |
+
 ## Have questions or feedback?
 
 Have question or feedback? To provide feedback (request a feature, report a bug etc.) use the [Gitter Chat](https://gitter.im/silverbulleters/sonar-l10n-ru)). Please do not forget to specify the language pack (Russian!), plugin version and SonarQube version.
