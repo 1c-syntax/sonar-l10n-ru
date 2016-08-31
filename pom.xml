@@ -145,7 +145,6 @@
         <version>1.15</version>
         <extensions>true</extensions>
         <configuration>
-          <basePlugin>l10nen</basePlugin>
           <pluginClass>${sonar.pluginClass}</pluginClass>
           <pluginName>Russian Pack</pluginName>
         </configuration>
