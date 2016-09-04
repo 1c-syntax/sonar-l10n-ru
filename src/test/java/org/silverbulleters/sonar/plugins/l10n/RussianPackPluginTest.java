@@ -21,6 +21,9 @@ package org.silverbulleters.sonar.plugins.l10n;
 
 import org.junit.Test;
 import org.sonar.api.Plugin.Context;
+import org.sonar.api.SonarQubeSide;
+import org.sonar.api.SonarRuntime;
+import org.sonar.api.internal.SonarRuntimeImpl;
 import org.sonar.api.utils.Version;
 import org.sonar.test.i18n.I18nMatchers;
 
@@ -31,7 +34,8 @@ public class RussianPackPluginTest {
   @Test
   public void testDefine() {
     RussianPackPlugin plugin = new RussianPackPlugin();
-    Context context = new Context(Version.create(0, 0));
+    SonarRuntime sonarRuntime = SonarRuntimeImpl.forSonarQube(Version.create(0, 0), SonarQubeSide.SERVER);
+    Context context = new Context(sonarRuntime);
     plugin.define(context);
     assertThat(context.getExtensions()).hasSize(0);
   }
