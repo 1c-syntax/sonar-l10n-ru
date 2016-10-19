@@ -24,9 +24,9 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 * then copy the `target\*.jar` into extensions dir of the SonarQube like it described in SonarQube docs
 
 ## Compatibility Matrix
-SonarQube     | 5.6.1 (LTS) | 6.0 |
---------------|-------------|-----|
-sonar-l10n-ru | 1.0         | 1.1 |
+SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 |
+--------------|-------------|-----|-----|
+sonar-l10n-ru | 1.0         | 1.1 | 1.2 |
 
 ## Have questions or feedback?
 
