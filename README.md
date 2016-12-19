@@ -4,6 +4,8 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 
 [![Gitter Chat https://gitter.im/silverbulleters/sonar-l10n-ru](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/silverbulleters/sonar-l10n-ru?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/sonar-l10-ru/localized.svg)](https://crowdin.com/project/sonar-l10-ru)
+[![SonarQube Tech Debt](https://img.shields.io/sonar/https/sonarqube.com/org.sonarqube.l10n.ru:sonar-l10n-ru-plugin/tech_debt.svg)](https://sonarqube.com/dashboard/index?id=org.sonarqube.l10n.ru%3Asonar-l10n-ru-plugin)
+[![SonarQube Coverage](https://img.shields.io/sonar/https/sonarqube.com/org.sonarqube.l10n.ru:sonar-l10n-ru-plugin/coverage.svg)](https://sonarqube.com/dashboard/index?id=org.sonarqube.l10n.ru%3Asonar-l10n-ru-plugin)
 
 ## Releases
 
@@ -24,9 +26,9 @@ This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web appli
 * then copy the `target\*.jar` into extensions dir of the SonarQube like it described in SonarQube docs
 
 ## Compatibility Matrix
-SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 |
---------------|-------------|-----|-----|
-sonar-l10n-ru | 1.0         | 1.1 | 1.2 |
+SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 | 6.2 |
+:------------:|:-----------:|:---:|:---:|:---:|
+sonar-l10n-ru | 1.0         | 1.1 | 1.2 | 1.3 |
 
 ## Have questions or feedback?
 

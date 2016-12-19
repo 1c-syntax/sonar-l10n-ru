@@ -10,7 +10,7 @@
 
   <groupId>org.sonarqube.l10n.ru</groupId>
   <artifactId>sonar-l10n-ru-plugin</artifactId>
-  <version>1.2</version>
+  <version>1.3</version>
   <packaging>sonar-plugin</packaging>
 
   <name>Russian Pack for SonarQube</name>
@@ -45,13 +45,13 @@
     <connection>scm:git:git://github.com/silverbulleters/sonar-l10n-ru.git</connection>
     <developerConnection>scm:git:git@github.com:silverbulleters/sonar-l10n-ru.git</developerConnection>
     <url>https://github.com/silverbulleters/sonar-l10n-ru</url>
-    <tag>1.2</tag>
+    <tag>v1.3</tag>
   </scm>
 
   <properties>
     <sonar.pluginClass>org.silverbulleters.sonar.plugins.l10n.RussianPackPlugin</sonar.pluginClass>
     <sonar.pluginKey>l10nru</sonar.pluginKey>
-    <sonarqube.version>6.1</sonarqube.version>
+    <sonarqube.version>6.2</sonarqube.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.sslrVersion>1.21</sonar.sslrVersion>
     <sonar.sslrSquidBridgeVersion>2.6.1</sonar.sslrSquidBridgeVersion>
