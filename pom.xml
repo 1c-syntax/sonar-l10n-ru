@@ -51,7 +51,7 @@
   <properties>
     <sonar.pluginClass>org.silverbulleters.sonar.plugins.l10n.RussianPackPlugin</sonar.pluginClass>
     <sonar.pluginKey>l10nru</sonar.pluginKey>
-    <sonarqube.version>6.2</sonarqube.version>
+    <sonarqube.version>6.3</sonarqube.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.sslrVersion>1.21</sonar.sslrVersion>
     <sonar.sslrSquidBridgeVersion>2.6.1</sonar.sslrSquidBridgeVersion>
