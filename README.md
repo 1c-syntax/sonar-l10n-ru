@@ -2,10 +2,15 @@
 
 This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web application in Russian.
 
-[![Gitter Chat https://gitter.im/silverbulleters/sonar-l10n-ru](https://badges.gitter.im/Join-Chat.svg)](https://gitter.im/silverbulleters/sonar-l10n-ru)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/sonar-l10-ru/localized.svg)](https://crowdin.com/project/sonar-l10-ru)
-[![SonarQube Tech Debt](https://img.shields.io/sonar/https/sonarqube.com/org.sonarqube.l10n.ru:sonar-l10n-ru-plugin/tech_debt.svg)](https://sonarqube.com/dashboard/index?id=org.sonarqube.l10n.ru%3Asonar-l10n-ru-plugin)
-[![SonarQube Coverage](https://img.shields.io/sonar/https/sonarqube.com/org.sonarqube.l10n.ru:sonar-l10n-ru-plugin/coverage.svg)](https://sonarqube.com/dashboard/index?id=org.sonarqube.l10n.ru%3Asonar-l10n-ru-plugin)
+[![Quality Gate](https://sonarqube.com/api/badges/gate?key=org.sonarqube.l10n.ru:sonar-l10n-ru-plugin)](https://sonarqube.com/dashboard/index/org.sonarqube.l10n.ru:sonar-l10n-ru-plugin)
+[![Quality Gate](https://sonarqube.com/api/badges/measure?key=org.sonarqube.l10n.ru:sonar-l10n-ru-plugin&metric=coverage)](https://sonarqube.com/dashboard/index/org.sonarqube.l10n.ru:sonar-l10n-ru-plugin)
+
+Direct Plugin Chat   | SonarQube-Russian-Chat |
+:-------------------:|:----------------------:|
+[![Gitter Chat https://gitter.im/silverbulleters/sonar-l10n-ru](https://badges.gitter.im/Join-Chat.svg)](https://gitter.im/silverbulleters/sonar-l10n-ru)            | [![Gitter Chat https://gitter.im/sonarqube-ru/public](https://badges.gitter.im/Join-Chat.svg)](https://gitter.im/sonarqube-ru/public)           |
+
+
 
 ## Releases
 
