@@ -31,9 +31,9 @@ Direct Plugin Chat   | SonarQube-Russian-Chat |
 * then copy the `target\*.jar` into extensions dir of the SonarQube like it described in SonarQube docs
 
 ## Compatibility Matrix
-SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 | 6.2 | 6.3 | 6.4 |
-:------------:|:-----------:|:---:|:---:|:---:|:---:|:---:|
-sonar-l10n-ru | 1.0         | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 |
+SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 | 6.2 | 6.3 | 6.4 | 6.5 |
+:------------:|:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|
+sonar-l10n-ru | 1.0         | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 |
 
 ## Have questions or feedback?
 
