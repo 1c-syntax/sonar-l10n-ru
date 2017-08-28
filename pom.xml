@@ -10,7 +10,7 @@
 
   <groupId>org.sonarqube.l10n.ru</groupId>
   <artifactId>sonar-l10n-ru-plugin</artifactId>
-  <version>1.6</version>
+  <version>1.7-SNAPSHOT</version>
   <packaging>sonar-plugin</packaging>
 
   <name>Russian Pack for SonarQube</name>
@@ -45,7 +45,7 @@
     <connection>scm:git:git://github.com/silverbulleters/sonar-l10n-ru.git</connection>
     <developerConnection>scm:git:git@github.com:silverbulleters/sonar-l10n-ru.git</developerConnection>
     <url>https://github.com/silverbulleters/sonar-l10n-ru</url>
-    <tag>v1.6</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
