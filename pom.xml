@@ -189,6 +189,14 @@
         <version>2.5.3</version>
       </plugin>
     </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>**/core.properties</exclude>
+        </excludes>
+      </resource>
+    </resources>
   </build>
 
 </project>
