@@ -53,8 +53,6 @@
     <sonar.pluginKey>l10nru</sonar.pluginKey>
     <sonarqube.version>6.5</sonarqube.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.sslrVersion>1.21</sonar.sslrVersion>
-    <sonar.sslrSquidBridgeVersion>2.6.1</sonar.sslrSquidBridgeVersion>
     <jdk.min.version>1.8</jdk.min.version>
 
     <!-- To configure maven-license-plugin to check license headers -->
