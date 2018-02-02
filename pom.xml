@@ -63,10 +63,6 @@
     <license.title>${project.name}</license.title>
     <license.years>${project.inceptionYear}</license.years>
     <license.mailto>mailto:contact AT silverbulleters DOT org</license.mailto>
-
-    <!-- Versions of the plugin translated by this language pack -->
-    <bundle.motionchart>1.7</bundle.motionchart>
-    <!-- add this stub for plugins localization -->
   </properties>
 
   <dependencies>
@@ -93,12 +89,6 @@
       <groupId>org.sonarsource.sonarqube</groupId>
       <artifactId>sonar-core</artifactId>
       <version>${sonarqube.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-motion-chart-plugin</artifactId>
-      <version>${bundle.motionchart}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
