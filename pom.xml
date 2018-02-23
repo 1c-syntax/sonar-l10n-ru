@@ -10,7 +10,7 @@
 
   <groupId>org.sonarqube.l10n.ru</groupId>
   <artifactId>sonar-l10n-ru-plugin</artifactId>
-  <version>1.8</version>
+  <version>1.9</version>
   <packaging>sonar-plugin</packaging>
 
   <name>Russian Pack for SonarQube</name>
@@ -45,16 +45,14 @@
     <connection>scm:git:git://github.com/silverbulleters/sonar-l10n-ru.git</connection>
     <developerConnection>scm:git:git@github.com:silverbulleters/sonar-l10n-ru.git</developerConnection>
     <url>https://github.com/silverbulleters/sonar-l10n-ru</url>
-    <tag>v1.8</tag>
+    <tag>v1.9</tag>
   </scm>
 
   <properties>
     <sonar.pluginClass>org.silverbulleters.sonar.plugins.l10n.RussianPackPlugin</sonar.pluginClass>
     <sonar.pluginKey>l10nru</sonar.pluginKey>
-    <sonarqube.version>6.5</sonarqube.version>
+    <sonarqube.version>7.0</sonarqube.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.sslrVersion>1.21</sonar.sslrVersion>
-    <sonar.sslrSquidBridgeVersion>2.6.1</sonar.sslrSquidBridgeVersion>
     <jdk.min.version>1.8</jdk.min.version>
 
     <!-- To configure maven-license-plugin to check license headers -->
@@ -63,10 +61,6 @@
     <license.title>${project.name}</license.title>
     <license.years>${project.inceptionYear}</license.years>
     <license.mailto>mailto:contact AT silverbulleters DOT org</license.mailto>
-
-    <!-- Versions of the plugin translated by this language pack -->
-    <bundle.motionchart>1.7</bundle.motionchart>
-    <!-- add this stub for plugins localization -->
   </properties>
 
   <dependencies>
@@ -93,12 +87,6 @@
       <groupId>org.sonarsource.sonarqube</groupId>
       <artifactId>sonar-core</artifactId>
       <version>${sonarqube.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.codehaus.sonar-plugins</groupId>
-      <artifactId>sonar-motion-chart-plugin</artifactId>
-      <version>${bundle.motionchart}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -201,6 +189,14 @@
         <version>2.5.3</version>
       </plugin>
     </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>**/core.properties</exclude>
+        </excludes>
+      </resource>
+    </resources>
   </build>
 
 </project>
