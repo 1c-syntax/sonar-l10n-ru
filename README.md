@@ -31,20 +31,21 @@ Direct Plugin Chat   | SonarQube-Russian-Chat |
 * then copy the `target\*.jar` into extensions dir of the SonarQube like it described in SonarQube docs
 
 ## Compatibility Matrix
-SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 | 6.2 | 6.3 | 6.4 | 6.5 | 6.6 | 6.7 | 7.0 | 7.1  |
-:------------:|:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
-sonar-l10n-ru | 1.0         | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 1.7 | 1.8 | 1.9 | 1.10 |
+SonarQube     | 5.6.x (LTS) | 6.0 | 6.1 | 6.2 | 6.3 | 6.4 | 6.5 | 6.6 | 6.7 | 7.0 | 7.1  | 7.2  |
+:------------:|:-----------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:----:|
+sonar-l10n-ru | 1.0         | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6 | 1.7 | 1.8 | 1.9 | 1.10 | 1.10 |
 
-## Have questions or feedback?
+## Have questions or feedback ?
 
-Have question or feedback? To provide feedback (request a feature, report a bug etc.) use the [Gitter Chat](https://gitter.im/silverbulleters/sonar-l10n-ru)). Please do not forget to specify the language pack (Russian!), plugin version and SonarQube version.
 If you have a question on how to use plugin, direct it to [StackOverflow](http://stackoverflow.com/questions/tagged/sonarqube) tagged `sonarqube`.
+
+Need to ask a question, report a bug or discuss a feature? - Please join the [Official SonarQube Comunity Forum](https://community.sonarsource.com/) or our [Russian Community Forum](https://xdd.silverbulleters.org/c/razrabotka/continious-inspection)
 
 ## Contributing
 
-#### Topic in SonarQube Google Group
+#### Create an issue
 
-To request a new feature, please create a new issue in [GitHub Issues](https://github.com/silverbulleters/sonar-l10n-ru/issues). 
+To request a new feature, please create a new issue in [GitHub Issues](https://github.com/silverbulleters/sonar-l10n-ru/issues).
 Even if you plan to implement it yourself and submit it back to the community, please start a new issue first to be sure that we can use it.
 If you plan to join the localization team, please join us on [CrowdIn Project](https://crowdin.com/project/sonar-l10-ru/ru#)
 
@@ -58,8 +59,6 @@ To submit a contribution, create a pull request for this repository. Please make
 * For contributing please use docker container to visual check of localization - use `rebuild-and-restart.sh` script for this
 
 ## For Russian Spoken People
-
-Этот плагин используется для локализации продукта SonarQube при внедрении процесса контроля качества 1С решений. Плагин для контроля 1С систем является платным - за подробностями обращайтесь по адресу `b2b@silverbulleters.org`
 
 Если вы хотите принять участие в локализации - вы можете присоединиться к команде локализаторов в рамках проекта [CrowdIn](https://crowdin.com/project/sonar-l10-ru/ru#)
 
