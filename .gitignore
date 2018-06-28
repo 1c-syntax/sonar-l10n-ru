@@ -19,3 +19,9 @@ hs_err_pid*
 
 target
 .sonar/
+
+
+.settings
+build
+.classpath
+.project
