@@ -58,6 +58,8 @@ To submit a contribution, create a pull request for this repository. Please make
 * This plugin [based on structure of French Lang Pack](https://github.com/SonarQubeCommunity/sonar-l10n-fr)
 * For contributing please use docker container to visual check of localization - use `rebuild-and-restart.sh` script for this
 
+**note**: to build SonarQube 7.2 image visit [this issue](https://github.com/SonarSource/docker-sonarqube/issues/182#issuecomment-401045259) and build image by yourself
+
 ## For Russian Spoken People
 
 Если вы хотите принять участие в локализации - вы можете присоединиться к команде локализаторов в рамках проекта [CrowdIn](https://crowdin.com/project/sonar-l10-ru/ru#)
