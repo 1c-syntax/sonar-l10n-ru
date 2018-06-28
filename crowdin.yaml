@@ -4,7 +4,7 @@ api_key_env: 'CROWDIN_API_KEY'
 files:
   -
     source: '/src/main/resources/org/sonar/l10n/*.properties'
-    translation: '/<%= ENV["GIT_LOCAL_BRANCH"] %>/src/main/resources/org/sonar/l10n/%file_name%_%two_letters_code%.properties'
+    translation: 'develop/src/main/resources/org/sonar/l10n/%file_name%_%two_letters_code%.properties'
     type: 'properties'
     ignore:
       - /**/*_ru.properties
