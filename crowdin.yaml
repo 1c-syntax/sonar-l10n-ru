@@ -1,5 +1,5 @@
 project_identifier: sonar-l10-ru
-api_key: <%= ENV["CROWDIN_API_KEY"] %>
+api_key_env: 'CROWDIN_API_KEY'
 
 files:
   -
