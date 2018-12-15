@@ -10,7 +10,19 @@ Direct Plugin Chat   | SonarQube-Russian-Chat |
 :-------------------:|:----------------------:|
 [![Gitter Chat https://gitter.im/silverbulleters/sonar-l10n-ru](https://badges.gitter.im/Join-Chat.svg)](https://gitter.im/silverbulleters/sonar-l10n-ru)            | [![Gitter Chat https://gitter.im/sonarqube-ru/public](https://badges.gitter.im/Join-Chat.svg)](https://gitter.im/sonarqube-ru/public)           |
 
+## How activate Russian languange ?
 
+we develop our plugin like it described on offficial docs [SonarQube Internationalization](https://docs.sonarqube.org/display/DEV/Internationalization), thats why - display of the Russian language in the browser is responsible for the platform itself
+
+SonarQube Platform language pack activation depends on your browser locale. Quote from official doc:
+
+> Language packs are plugins that change the language of the user interface. They are called based on the language preference set in the user's browser
+
+* if your browser use `ru_RU` lang as preference - you see russian interface automaticly 
+* if your browser use a different locale - please change it in browser, or use extensions - for example
+  * Firefox - use this extensdion https://addons.mozilla.org/ru/firefox/addon/quick-accept-language-switc/
+
+This behavior developed by SonarQube team in this [typescript code from the SonarQube Core](https://github.com/SonarSource/sonarqube/blob/master/server/sonar-web/src/main/js/helpers/l10n.ts)
 
 ## Releases
 
