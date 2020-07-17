@@ -3,7 +3,7 @@
 This is the plugin to translate [SonarQube](http://www.sonarqube.org/) web application in Russian.
 
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/sonar-l10-ru/localized.svg)](https://crowdin.com/project/sonar-l10-ru)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=1c-syntax_sonar-l10n-ru-plugin&metric=alert_status)](https://sonarcloud.io/dashboard?id=1c-syntax_sonar-l10n-ru-plugin)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=1c-syntax_sonar-l10n-ru&metric=alert_status)](https://sonarcloud.io/dashboard?id=1c-syntax_sonar-l10n-ru)
 
 Originally created by [SilverBulleters, LLC](https://silverbulleters.org). Now maintained by [1c-syntax community](https://github.com/1c-syntax).
 ## Releases

@@ -204,7 +204,7 @@ sonarqube {
         property("sonar.sourceEncoding", "UTF-8")
         property("sonar.host.url", "https://sonarcloud.io")
         property("sonar.organization", "1c-syntax")
-        property("sonar.projectKey", "1c-syntax_sonar-l10n-ru-plugin")
+        property("sonar.projectKey", "1c-syntax_sonar-l10n-ru")
         property("sonar.projectName", "Russian Pack for SonarQube")
         property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/reports/jacoco/test/jacoco.xml")
     }
