@@ -1,21 +1,27 @@
 /*
- * Russian Pack for SonarQube
- * Copyright (C) 2016 SilverBulleters, LLC
- * mailto:contact AT silverbulleters DOT org
+ * This file is a part of Russian Pack for SonarQube.
  *
- * This program is free software; you can redistribute it and/or
+ * Copyright © 2016-2018
+ * SilverBulleters, LLC
+ * mailto:b2b@silverbulleters.org
+ *
+ * Copyright © 2020-2020
+ * 1c-syntax and contributors
+ *
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ *
+ * Russian Pack for SonarQube is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
+ * version 3.0 of the License, or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * Russian Pack for SonarQube is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
  *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with Russian Pack for SonarQube.
  */
 package org.silverbulleters.sonar.plugins.l10n;
 
