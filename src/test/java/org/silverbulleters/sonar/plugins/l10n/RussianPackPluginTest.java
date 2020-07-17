@@ -25,29 +25,45 @@
  */
 package org.silverbulleters.sonar.plugins.l10n;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.sonar.api.Plugin.Context;
+import org.sonar.api.SonarEdition;
 import org.sonar.api.SonarQubeSide;
 import org.sonar.api.SonarRuntime;
+import org.sonar.api.internal.PluginContextImpl;
 import org.sonar.api.internal.SonarRuntimeImpl;
 import org.sonar.api.utils.Version;
 import org.sonar.test.i18n.I18nMatchers;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class RussianPackPluginTest {
+class RussianPackPluginTest {
 
   @Test
-  public void testDefine() {
+  void testDefine() {
+    // given
+    SonarRuntime sonarRuntime = SonarRuntimeImpl.forSonarQube(
+      Version.create(0, 0),
+      SonarQubeSide.SERVER,
+      SonarEdition.COMMUNITY
+    );
+    Context context = new PluginContextImpl.Builder()
+      .setSonarRuntime(sonarRuntime)
+      .build();
+
     RussianPackPlugin plugin = new RussianPackPlugin();
-    SonarRuntime sonarRuntime = SonarRuntimeImpl.forSonarQube(Version.create(0, 0), SonarQubeSide.SERVER);
-    Context context = new Context(sonarRuntime);
+
+    // when
     plugin.define(context);
-    assertThat(context.getExtensions()).hasSize(0);
+
+    // then
+    assertThat((List<?>) context.getExtensions()).isEmpty();
   }
 
   @Test
-  public void bundlesShouldBeUpToDate() {
+  void bundlesShouldBeUpToDate() {
     I18nMatchers.assertBundlesUpToDate();
   }
 
