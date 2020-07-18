@@ -37,7 +37,7 @@ gitVersioning.apply(closureOf<GitVersioningPluginConfig> {
     })
 })
 
-val sonarQubeVersion = "8.3.1.34397"
+val sonarQubeVersion = "8.4.1.35646"
 val junitVersion = "5.6.1"
 
 dependencies {
