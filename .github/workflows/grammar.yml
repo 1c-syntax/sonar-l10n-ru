@@ -11,6 +11,6 @@ jobs:
       - uses: actions/setup-node@v2
       - name: Run yaspeller
         run: |
-          npm install yaspeller -g
+          npm install yaspeller
           yaspeller src\main\resources\org\sonar\l10n\core_ru.properties --ignore-latin
 
