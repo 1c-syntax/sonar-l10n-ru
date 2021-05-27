@@ -1,0 +1,22 @@
+name: Grammar check
+
+on: 
+  push:
+    branches:
+      - develop
+      - master
+      - '[0-9].[0-9]'
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: Run yaspeller
+        run: |
+          npm install yaspeller -g
+          yaspeller src\main\resources\org\sonar\l10n\core_ru.properties --ignore-latin
+
