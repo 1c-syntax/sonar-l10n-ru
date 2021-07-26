@@ -15,3 +15,5 @@ build
 .classpath
 .project
 .gradle/
+/.vscode/settings.json
+*.orig
