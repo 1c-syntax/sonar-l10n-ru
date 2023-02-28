@@ -41,12 +41,12 @@ val sonarQubeVersion = "9.9.0.65466"
 val junitVersion = "5.6.1"
 
 dependencies {
-    compileOnly("org.sonarsource.sonarqube", "sonar-plugin-api-impl", sonarQubeVersion)
+    compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", "9.14.0.375")
 
     testImplementation("org.junit.jupiter", "junit-jupiter-api", junitVersion)
     testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", junitVersion)
 
-    testImplementation("org.sonarsource.sonarqube", "sonar-plugin-api-impl", sonarQubeVersion)
+    testImplementation("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-testing-harness", sonarQubeVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-core", sonarQubeVersion)
     testImplementation("org.assertj", "assertj-core", "3.16.1")
