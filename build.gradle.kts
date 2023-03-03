@@ -9,7 +9,7 @@ plugins {
     `maven-publish`
     jacoco
     id("org.cadixdev.licenser") version "0.6.1"
-    id("org.sonarqube") version "2.8"
+    id("org.sonarqube") version "4.0.0.2929"
     id("me.qoomon.git-versioning") version "3.0.0"
     id("com.github.ben-manes.versions") version "0.28.0"
 }
