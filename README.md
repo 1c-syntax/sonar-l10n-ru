@@ -26,14 +26,15 @@ Originally created by [SilverBulleters, LLC](https://silverbulleters.org). Now m
 
 ## Compatibility Matrix
 
-SonarQube  | sonar-l10n-ru 
-:---------:|:-------------:
-9.4        |9.4
-9.3        |9.3
-9.2        |9.2
-9.1        |9.1
-9.0        |9.0.1
-8.9        |8.9.2
+SonarQube        | sonar-l10n-ru 
+:---------------:|:-------------:
+9.9 - __latest__ |9.9
+9.4 - 9.8.*      |9.4
+9.3              |9.3
+9.2              |9.2
+9.1              |9.1
+9.0              |9.0.1
+8.9              |8.9.2
 
 ## How activate Russian language ?
 
