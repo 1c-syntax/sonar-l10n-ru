@@ -6,11 +6,10 @@ import java.util.*
 
 plugins {
     java
-    maven
     `maven-publish`
     jacoco
-    id("com.github.hierynomus.license") version "0.15.0"
-    id("org.sonarqube") version "2.8"
+    id("org.cadixdev.licenser") version "0.6.1"
+    id("org.sonarqube") version "4.0.0.2929"
     id("me.qoomon.git-versioning") version "3.0.0"
     id("com.github.ben-manes.versions") version "0.28.0"
 }
@@ -37,16 +36,16 @@ gitVersioning.apply(closureOf<GitVersioningPluginConfig> {
     })
 })
 
-val sonarQubeVersion = "9.0.0.45539"
+val sonarQubeVersion = "9.9.0.65466"
 val junitVersion = "5.6.1"
 
 dependencies {
-    compileOnly("org.sonarsource.sonarqube", "sonar-plugin-api", sonarQubeVersion)
+    compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", "9.14.0.375")
 
     testImplementation("org.junit.jupiter", "junit-jupiter-api", junitVersion)
     testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", junitVersion)
 
-    testImplementation("org.sonarsource.sonarqube", "sonar-plugin-api", sonarQubeVersion)
+    testImplementation("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-testing-harness", sonarQubeVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-core", sonarQubeVersion)
     testImplementation("org.assertj", "assertj-core", "3.16.1")
@@ -71,7 +70,7 @@ tasks.test {
     }
 
     reports {
-        html.isEnabled = true
+        html.required.set(true)
     }
 }
 
@@ -81,8 +80,8 @@ tasks.check {
 
 tasks.jacocoTestReport {
     reports {
-        xml.isEnabled = true
-        xml.destination = File("$buildDir/reports/jacoco/test/jacoco.xml")
+        xml.required.set(true)
+        xml.outputLocation.set(File("$buildDir/reports/jacoco/test/jacoco.xml"))
     }
 }
 
@@ -190,12 +189,11 @@ publishing {
 }
 
 license {
-    header = rootProject.file("license/HEADER.txt")
+    header(rootProject.file("license/HEADER.txt"))
+    newLine(false)
     ext["year"] = "2020-" + Calendar.getInstance().get(Calendar.YEAR)
     ext["name"] = "1c-syntax"
     ext["project"] = "Russian Pack for SonarQube"
-    strictCheck = true
-    mapping("java", "SLASHSTAR_STYLE")
     exclude("**/*.properties")
 }
 
