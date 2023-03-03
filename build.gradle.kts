@@ -8,7 +8,7 @@ plugins {
     java
     `maven-publish`
     jacoco
-    id("com.github.hierynomus.license") version "0.15.0"
+    id("org.cadixdev.licenser") version "0.6.1"
     id("org.sonarqube") version "2.8"
     id("me.qoomon.git-versioning") version "3.0.0"
     id("com.github.ben-manes.versions") version "0.28.0"
@@ -189,12 +189,11 @@ publishing {
 }
 
 license {
-    header = rootProject.file("license/HEADER.txt")
+    header(rootProject.file("license/HEADER.txt"))
+    newLine(false)
     ext["year"] = "2020-" + Calendar.getInstance().get(Calendar.YEAR)
     ext["name"] = "1c-syntax"
     ext["project"] = "Russian Pack for SonarQube"
-    strictCheck = true
-    mapping("java", "SLASHSTAR_STYLE")
     exclude("**/*.properties")
 }
 

@@ -1,11 +1,11 @@
 /*
  * This file is a part of Russian Pack for SonarQube.
  *
- * Copyright © 2016-2018
+ * Copyright (c) 2016-2018
  * SilverBulleters, LLC
  * mailto:b2b@silverbulleters.org
  *
- * Copyright © 2020-2023
+ * Copyright (c) 2020-2023
  * 1c-syntax and contributors
  *
  * SPDX-License-Identifier: LGPL-3.0-or-later
