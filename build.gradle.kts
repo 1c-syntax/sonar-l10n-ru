@@ -37,23 +37,24 @@ gitVersioning.apply(closureOf<GitVersioningPluginConfig> {
 })
 
 val sonarQubeVersion = "10.0.0.68432"
+val sonarQubeAPIPluginVersion = "9.14.0.375"
 val junitVersion = "5.6.1"
 
 dependencies {
-    compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", "9.14.0.375")
+    compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
 
     testImplementation("org.junit.jupiter", "junit-jupiter-api", junitVersion)
     testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", junitVersion)
 
-    testImplementation("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeVersion)
+    testImplementation("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-testing-harness", sonarQubeVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-core", sonarQubeVersion)
     testImplementation("org.assertj", "assertj-core", "3.16.1")
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 tasks.withType<JavaCompile> {
