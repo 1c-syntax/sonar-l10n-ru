@@ -28,7 +28,8 @@ Originally created by [SilverBulleters, LLC](https://silverbulleters.org). Now m
 
 SonarQube        | sonar-l10n-ru 
 :---------------:|:-------------:
-10.1 - __latest__|10.1
+10.2 - __latest__|10.2
+10.1             |10.1
 10.0             |10.0
 9.4 - 9.8.*      |9.4
 9.3              |9.3
