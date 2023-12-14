@@ -110,8 +110,6 @@ tasks.jar {
         attributes["Plugin-SourcesUrl"] = "https://github.com/1c-syntax/sonar-l10n-ru"
         attributes["Plugin-Developers"] = "Alexey Lustin, Nikita Gryzlov"
 
-        attributes["Sonar-Version"] = sonarQubeVersion
-
         attributes["Plugin-Organization"] = "SilverBulleters, 1c-syntax and contributors"
         attributes["Plugin-OrganizationUrl"] = "https://github.com/1c-syntax"
 
