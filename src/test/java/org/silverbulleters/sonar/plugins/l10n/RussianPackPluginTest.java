@@ -5,7 +5,7 @@
  * SilverBulleters, LLC
  * mailto:b2b@silverbulleters.org
  *
- * Copyright (c) 2020-2023
+ * Copyright (c) 2020-2024
  * 1c-syntax and contributors
  *
  * SPDX-License-Identifier: LGPL-3.0-or-later
