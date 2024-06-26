@@ -36,8 +36,8 @@ gitVersioning.apply(closureOf<GitVersioningPluginConfig> {
     })
 })
 
-val sonarQubeVersion = "10.4.1.88267"
-val sonarQubeAPIPluginVersion = "10.6.0.2114"
+val sonarQubeVersion = "10.5.1.90531"
+val sonarQubeAPIPluginVersion = "10.6.0.2114" # https://github.com/SonarSource/sonar-plugin-api#compatibility
 val junitVersion = "5.6.1"
 
 dependencies {
