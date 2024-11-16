@@ -17,7 +17,7 @@ jobs:
       with:
         java-version: ${{ matrix.java_version }}
         distribution: 'temurin'
-        cache: Gradle
+        cache: gradle
     - name: Build with Gradle
       run: ./gradlew check --stacktrace
     - name: Archive test results
