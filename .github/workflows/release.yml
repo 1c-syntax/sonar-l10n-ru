@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: 17
+        distribution: 'temurin'
+        cache: Gradle
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload jar to release
