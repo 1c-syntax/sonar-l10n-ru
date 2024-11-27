@@ -48,7 +48,9 @@ dependencies {
 
     testImplementation("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-testing-harness", sonarQubeVersion)
-    testImplementation("org.sonarsource.sonarqube", "sonar-core", sonarQubeVersion)
+    testImplementation("org.sonarsource.sonarqube", "sonar-core", sonarQubeVersion) {
+        exclude(group = "org.sonarsource.sonarqube", module = "sonar-sarif")
+    }
     testImplementation("org.assertj", "assertj-core", "3.16.1")
 }
 
