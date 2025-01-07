@@ -1,6 +1,3 @@
-import me.qoomon.gradle.gitversioning.GitVersioningPluginConfig
-import me.qoomon.gradle.gitversioning.GitVersioningPluginConfig.CommitVersionDescription
-import me.qoomon.gradle.gitversioning.GitVersioningPluginConfig.VersionDescription
 import org.apache.tools.ant.filters.EscapeUnicode
 import java.util.*
 
@@ -10,8 +7,8 @@ plugins {
     jacoco
     id("org.cadixdev.licenser") version "0.6.1"
     id("org.sonarqube") version "6.0.1.5171"
-    id("me.qoomon.git-versioning") version "3.0.0"
-    id("com.github.ben-manes.versions") version "0.28.0"
+    id("me.qoomon.git-versioning") version "6.4.4"
+    id("com.github.ben-manes.versions") version "0.51.0"
 }
 
 repositories {
@@ -21,20 +18,21 @@ repositories {
 group = "com.github.1c-syntax"
 description = "Translate SonarQube web application in Russian"
 
-gitVersioning.apply(closureOf<GitVersioningPluginConfig> {
-    preferTags = true
-    branch(closureOf<VersionDescription> {
-        pattern = "^(?!v[0-9]+).*"
-        versionFormat = "\${branch}-\${commit.short}\${dirty}"
-    })
-    tag(closureOf<VersionDescription> {
-        pattern = "v(?<tagVersion>[0-9].*)"
-        versionFormat = "\${tagVersion}\${dirty}"
-    })
-    commit(closureOf<CommitVersionDescription> {
-        versionFormat = "\${commit.short}\${dirty}"
-    })
-})
+gitVersioning.apply {
+    refs {
+        considerTagsOnBranches = true
+        tag("v(?<tagVersion>[0-9].*)") {
+            version = "\${ref.tagVersion}\${dirty}"
+        }
+        branch(".+") {
+            version = "\${ref}-\${commit.short}\${dirty}"
+        }
+    }
+
+    rev {
+        version = "\${commit.short}\${dirty}"
+    }
+}
 
 val sonarQubeVersion = "24.12.0.100206" // "10.8.0.100206"
 val sonarQubeAPIPluginVersion = "10.14.0.2599" // https://github.com/SonarSource/sonar-plugin-api#compatibility
@@ -84,7 +82,7 @@ tasks.check {
 tasks.jacocoTestReport {
     reports {
         xml.required.set(true)
-        xml.outputLocation.set(File("$buildDir/reports/jacoco/test/jacoco.xml"))
+        xml.outputLocation.set(File("${layout.buildDirectory.get()}/reports/jacoco/test/jacoco.xml"))
     }
 }
 
@@ -205,6 +203,6 @@ sonarqube {
         property("sonar.organization", "1c-syntax")
         property("sonar.projectKey", "1c-syntax_sonar-l10n-ru")
         property("sonar.projectName", "Russian Pack for SonarQube")
-        property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/reports/jacoco/test/jacoco.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "${layout.buildDirectory.get()}/reports/jacoco/test/jacoco.xml")
     }
 }
