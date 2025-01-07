@@ -9,7 +9,7 @@ plugins {
     `maven-publish`
     jacoco
     id("org.cadixdev.licenser") version "0.6.1"
-    id("org.sonarqube") version "4.0.0.2929"
+    id("org.sonarqube") version "6.0.1.5171"
     id("me.qoomon.git-versioning") version "3.0.0"
     id("com.github.ben-manes.versions") version "0.28.0"
 }
@@ -36,8 +36,8 @@ gitVersioning.apply(closureOf<GitVersioningPluginConfig> {
     })
 })
 
-val sonarQubeVersion = "10.7.0.96327"
-val sonarQubeAPIPluginVersion = "10.11.0.2468" // https://github.com/SonarSource/sonar-plugin-api#compatibility
+val sonarQubeVersion = "24.12.0.100206" // "10.8.0.100206"
+val sonarQubeAPIPluginVersion = "10.14.0.2599" // https://github.com/SonarSource/sonar-plugin-api#compatibility
 val junitVersion = "5.6.1"
 
 dependencies {
