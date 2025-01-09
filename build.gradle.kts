@@ -34,8 +34,9 @@ gitVersioning.apply {
     }
 }
 
-val sonarQubeVersion = "24.12.0.100206" // "10.8.0.100206"
-val sonarQubeAPIPluginVersion = "10.14.0.2599" // https://github.com/SonarSource/sonar-plugin-api#compatibility
+// https://github.com/SonarSource/sonarqube/blob/master/gradle.properties
+val sonarQubeVersion = "25.1.0.102122" // "10.8.0.10464"
+val sonarQubeAPIPluginVersion = "11.0.0.2664" // https://github.com/SonarSource/sonar-plugin-api#compatibility
 val junitVersion = "5.6.1"
 
 dependencies {
