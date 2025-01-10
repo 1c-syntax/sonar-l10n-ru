@@ -28,7 +28,8 @@ Originally created by [SilverBulleters, LLC](https://silverbulleters.org). Now m
 
 SonarQube              | sonar-l10n-ru 
 :---------------------:|:-------------:
-10.8/24.12 - __latest__|10.8
+10.8/25.01 - __latest__|25.1
+10.8/24.12             |10.8
 10.7                   |10.7
 10.6                   |10.6
 10.5                   |10.5      
@@ -38,12 +39,6 @@ SonarQube              | sonar-l10n-ru
 10.1                   |10.1.1
 10.0                   |10.0.1
 9.9 **LTS**            |9.9.1
-9.4 - 9.8.*            |9.4
-9.3                    |9.3
-9.2                    |9.2
-9.1                    |9.1
-9.0                    |9.0.1
-8.9                    |8.9.2
 
 ## How activate Russian language ?
 
