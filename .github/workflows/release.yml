@@ -1,4 +1,4 @@
-ame: Upload to release
+name: Upload to release
 
 on:
   release:
