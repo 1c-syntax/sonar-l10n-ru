@@ -80,7 +80,8 @@
     "isStandardMode",
     "issueLink",
     "operator",
-    "одно"
+    "одно",
+    "следующий"
   ],
   "ignoreText": [
     "\\-ов",
