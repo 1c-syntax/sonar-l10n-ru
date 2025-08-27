@@ -7,10 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
       - name: Run yaspeller
         run: |
           sudo npm install yaspeller -g
           yaspeller ./src/main/resources/org/sonar/l10n/core_ru.properties --ignore-latin --ignore-capitalization
-
