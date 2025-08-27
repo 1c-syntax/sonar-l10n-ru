@@ -13,4 +13,3 @@ jobs:
         run: |
           sudo npm install yaspeller -g
           yaspeller ./src/main/resources/org/sonar/l10n/core_ru.properties --ignore-latin --ignore-capitalization
-
