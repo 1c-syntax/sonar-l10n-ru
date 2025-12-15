@@ -37,7 +37,7 @@ gitVersioning.apply {
 
 // https://github.com/SonarSource/sonarqube/blob/master/gradle.properties
 val sonarQubeVersion = "25.11.0.114957"
-val sonarQubeAPIPluginVersion = "13.0.0.3026" // https://github.com/SonarSource/sonar-plugin-api#compatibility
+val sonarQubeAPIPluginVersion = "13.3.0.3209" // https://github.com/SonarSource/sonar-plugin-api#compatibility
 
 dependencies {
     compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
