@@ -5,14 +5,15 @@ plugins {
     java
     `maven-publish`
     jacoco
-    id("org.cadixdev.licenser") version "0.6.1"
-    id("org.sonarqube") version "6.0.1.5171"
+    id("org.sonarqube") version "7.2.3.7755"
+    id("cloud.rio.license") version "0.18.0"
     id("me.qoomon.git-versioning") version "6.4.4"
-    id("com.github.ben-manes.versions") version "0.51.0"
+    id("com.github.ben-manes.versions") version "0.53.0"
 }
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 group = "com.github.1c-syntax"
@@ -42,8 +43,7 @@ val junitVersion = "5.6.1"
 dependencies {
     compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
 
-    testImplementation("org.junit.jupiter", "junit-jupiter-api", junitVersion)
-    testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", junitVersion)
+    testImplementation("org.junit.jupiter", "junit-jupiter-api", "6.0.3")
 
     testImplementation("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
     testImplementation("org.sonarsource.sonarqube", "sonar-testing-harness", sonarQubeVersion)
@@ -51,6 +51,9 @@ dependencies {
         exclude(group = "org.sonarsource.sonarqube", module = "sonar-sarif")
     }
     testImplementation("org.assertj", "assertj-core", "3.16.1")
+
+    testRuntimeOnly("org.junit.jupiter", "junit-jupiter-engine", "6.0.3")
+    testRuntimeOnly("org.junit.platform", "junit-platform-launcher", "6.0.3")
 }
 
 java {
@@ -189,12 +192,14 @@ publishing {
 }
 
 license {
-    header(rootProject.file("license/HEADER.txt"))
-    newLine(false)
+    header = rootProject.file("license/HEADER.txt")
+    skipExistingHeaders = false
+    strictCheck = true
+    mapping("java", "SLASHSTAR_STYLE")
     ext["year"] = "2020-" + Calendar.getInstance().get(Calendar.YEAR)
     ext["name"] = "1c-syntax"
     ext["project"] = "Russian Pack for SonarQube"
-    exclude("**/*.properties")
+    include("**/*.java")
 }
 
 sonarqube {
