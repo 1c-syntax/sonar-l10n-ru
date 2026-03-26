@@ -36,9 +36,8 @@ gitVersioning.apply {
 }
 
 // https://github.com/SonarSource/sonarqube/blob/master/gradle.properties
-val sonarQubeVersion = "25.7.0.110598"
-val sonarQubeAPIPluginVersion = "13.0.0.3026" // https://github.com/SonarSource/sonar-plugin-api#compatibility
-val junitVersion = "5.6.1"
+val sonarQubeVersion = "25.11.0.114957"
+val sonarQubeAPIPluginVersion = "13.3.0.3209" // https://github.com/SonarSource/sonar-plugin-api#compatibility
 
 dependencies {
     compileOnly("org.sonarsource.api.plugin", "sonar-plugin-api", sonarQubeAPIPluginVersion)
@@ -209,6 +208,9 @@ sonarqube {
         property("sonar.organization", "1c-syntax")
         property("sonar.projectKey", "1c-syntax_sonar-l10n-ru")
         property("sonar.projectName", "Russian Pack for SonarQube")
-        property("sonar.coverage.jacoco.xmlReportPaths", "${layout.buildDirectory.get()}/reports/jacoco/test/jacoco.xml")
+        property(
+            "sonar.coverage.jacoco.xmlReportPaths",
+            "${layout.buildDirectory.get()}/reports/jacoco/test/jacoco.xml"
+        )
     }
 }
