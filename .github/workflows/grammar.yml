@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
       - name: Run yaspeller
         run: |
           sudo npm install yaspeller -g
